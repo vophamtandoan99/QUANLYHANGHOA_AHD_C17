@@ -1,0 +1,138 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 98;
+  visibility: hidden; }
+
+.showover {
+  visibility: visible; }
+
+.form--add {
+  visibility: visible;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.showform {
+  visibility: visible; }
+
+.addform {
+  transform: scale(1) !important; }
+
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  width: 50rem;
+  padding: 3rem 2rem;
+  background-color: #fff;
+  transform: scale(1);
+  transition: .2s;
+  margin-top: 2rem; }
+  .form i {
+    font-size: 3rem;
+    margin: 1rem 0 1.5rem;
+    color: #d64f42; }
+  .form__file {
+    margin: 1.5rem 0;
+    width: 100%; }
+    .form__file lable {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      display: block; }
+    .form__file input {
+      border: none;
+      width: 100%;
+      font-size: 1.8rem;
+      border-bottom: 1px solid gray;
+      outline: none; }
+
+.add-link button {
+  width: 7rem;
+  height: 4rem;
+  border: none;
+  outline: none;
+  margin: 0 3px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer; }
+
+.add-link #add {
+  background: #2ecc71; }
+
+.add-link #cancel {
+  background: #e74c3c; }
+
+.form-delete {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  justify-content: center;
+  pointer-events: none; }
+
+.form-delete i {
+  color: #d64f42;
+  font-size: 4rem;
+  margin: 1rem 0 1.5rem; }
+
+.form-delete h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem; }
+
+.form-xoa .d-flex button {
+  width: 100%;
+  margin: 0 5px;
+  border-radius: 10px;
+  font-weight: 700;
+  color: #fff;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  padding: 1.5rem 4rem;
+  font-size: 1.4rem;
+  transition: .3s ease-out; }
+
+.form-xoa .d-flex button.yes {
+  background: #29ad60; }
+
+.form-xoa .d-flex button.no {
+  background: #e74c3c; }
+
+.form-delete .form-xoa {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 32rem;
+  padding: 2rem 2.5rem;
+  background: #fff;
+  transition: .3s ease-out;
+  visibility: hidden;
+  transform: scale(0); }
+
+.form-delete.active {
+  pointer-events: unset; }
+
+.form-delete.active .form-xoa {
+  transform: scale(1);
+  visibility: visible; }
+
+.employee--add .form {
+  width: 40rem; }
+
+.dflex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center; }
+  .dflex .form__file {
+    margin-right: 20px; }

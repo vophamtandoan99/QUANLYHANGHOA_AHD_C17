@@ -1,0 +1,59 @@
+.signup {
+  background-color: whitesmoke; }
+  .signup__main {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    width: 800px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-top: 30px; }
+    .signup__main--logo {
+      text-align: center;
+      padding: 4rem 0; }
+    .signup__main--text {
+      padding-top: 2rem;
+      cursor: pointer;
+      font-size: 1.4rem;
+      text-decoration: underline; }
+    .signup__main--form {
+      padding: 4rem 0; }
+      .signup__main--form h2 {
+        font-weight: 700;
+        color: #222;
+        font-size: 36px;
+        margin-bottom: 2rem; }
+    .signup__main--input {
+      position: relative;
+      margin-bottom: 1rem; }
+      .signup__main--input lable {
+        position: absolute;
+        left: 0;
+        top: 40%; }
+        .signup__main--input lable i {
+          font-size: 1.2rem; }
+      .signup__main--input input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #999;
+        padding: 6px 30px; }
+    .signup__main--btn {
+      display: block;
+      margin-top: 5rem; }
+    .signup__main--link {
+      background: #6dabe4;
+      color: #fff;
+      border-bottom: none;
+      border-radius: 10px;
+      width: auto;
+      padding: 15px 39px;
+      cursor: pointer; }
+  .signup__list {
+    display: flex;
+    margin-top: 5rem; }
+    .signup__list li {
+      margin-right: 1rem; }
+      .signup__list li i {
+        width: 30px;
+        height: 30px; }

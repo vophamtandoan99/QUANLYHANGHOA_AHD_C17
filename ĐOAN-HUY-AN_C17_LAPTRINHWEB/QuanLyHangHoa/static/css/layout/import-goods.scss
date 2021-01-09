@@ -1,0 +1,24 @@
+.backgr{
+    background-color: whitesmoke;
+}
+.form-import {
+    padding: 10rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  .formadd--import {
+    background: white;
+    padding: 2rem;
+    .form__file {
+  
+      a {
+       margin-bottom: 1rem;
+       font-size: 1.6rem;
+       display: block;
+      }
+      select , input {
+        font-size: 1.5rem;
+          width: 100%;
+      }
+    }
+  }

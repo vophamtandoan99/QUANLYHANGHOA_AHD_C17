@@ -1,0 +1,24 @@
+// item
+$item: center ,flex-start , flex-end;
+@each $items in $item {
+    .align-item-#{$items} {
+     align-items: $items;
+    }
+  }
+// justify
+$justify:space-between ,flex-start,flex-end,center,space-evenly,space-around;
+@each $justifys in $justify {
+    .justify-content-#{$justifys}{
+      justify-content: $justifys;
+    }
+    
+}
+
+// Font Weight
+$weight:400,500,600,700,900,bold;
+@each $weights in $weight {
+    .weight-#{$weights}{
+        font-weight:$weights;
+    }
+    
+}

@@ -1,0 +1,259 @@
+.table {
+  padding: 10px;
+  margin-left: 80px;
+  padding-top: 75px;
+  background: whitesmoke;
+  transition: margin-left .5s;
+
+  &__txt {
+    padding: 1rem 0;
+    justify-content: space-between;
+
+    &--title {
+      h2 {
+        font-size: 3rem;
+        color: black;
+      }
+
+    }
+
+    &--link {
+      display: flex;
+    }
+
+    &--item {
+      margin-left: .5rem;
+
+      .active {
+        color: #0066FF;
+      }
+
+      a {
+        font-size: 1.3rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__top {
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.12) 0 1px 4px 1px;
+
+    &--filter {
+      background: #0066FF;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+
+      i {
+        font-size: 1.5rem;
+        margin-right: .5rem;
+      }
+
+      span {
+        font-size: 1.5rem;
+      }
+    }
+
+    &--add {
+      background: #6ab04c;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+
+      i {
+        font-size: 1.5rem;
+        margin-right: .5rem;
+      }
+
+      span {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+.sidebar-expand .table {
+  margin-left: 252px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+table thead {
+  border-bottom: 3px solid #d64f42;
+}
+
+table thead tr th {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 0 1rem;
+  cursor: pointer;
+  padding: 15px;
+}
+//  table thead tr th:nth-child(1){
+//     width: 10%;
+// }
+//  table thead tr th:nth-child(2){
+//     width: 20%;
+// }
+//  table thead tr th:nth-child(3){
+//     width: 20%;
+// }
+//  table thead tr th:nth-child(4){
+//     width: 10%;
+// }
+//  table thead tr th:nth-child(5){
+//     width: 5%;
+// }
+//  table thead tr th:nth-child(6){
+//     width: 5%;
+// }
+table tbody tr:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: left;
+}
+
+tbody tr td {
+  font-size: 1.4rem;
+  color: #999;
+  font-weight: 500;
+  padding: 15px;
+  margin: 0 1rem;
+}
+
+tbody tr td button {
+  width: 7rem;
+  height: 4rem;
+  border: none;
+  outline: none;
+  margin: 0 3px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+tbody tr td button#edit {
+  background: #2ecc71;
+}
+
+tbody tr td button#delete {
+  background: #e74c3c;
+}
+@include breakpoint(600) {
+  .table {
+    margin-left: 0;
+  }
+
+  .table__main {
+    overflow-x: auto;
+  }
+}
+@include breakpoint(800) {
+  html {
+    font-size: 41%;
+  }
+}
+// Table Imports Goods
+.table {
+  &__main {
+    }
+
+  &__block {
+    .txt {
+      float: right;
+
+      a {}
+    }
+
+    &--input {
+      .table--item {
+        margin-bottom: 2rem;
+
+        lable {
+          margin-bottom: 1rem;
+          font-size: 1.2rem;
+          font-weight: bold;
+          display: block;
+        }
+
+        input,
+        select {
+          -ms-box-sizing: content-box;
+          -moz-box-sizing: content-box;
+          -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+          width: 300px;
+
+        }
+
+        select {}
+
+        .table--link {
+          float: right;
+          a {
+          }
+        }
+
+        .table--result {
+          margin: 2rem 0;
+          a {}
+        }
+      }
+    }
+  }
+
+  &--goods {}
+}
+.btn {
+  padding: 1rem 2rem;
+            font-size: 1.3rem;
+            width: 7rem;
+            height: 4rem;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            color: white;
+}
+.btn-link1{
+  background: #6ab04c;
+}
+.btn-link2{
+  background: #e74c3c;
+}
+.btn-link3{
+  background: #2ecc71;
+
+}
+.btn-link4{
+  background: #0066FF;
+}
+// Table--Export 
+.table-sum {
+  margin-top: 2rem;
+  justify-content: space-around;
+}
+.table__input input {
+  border: none;
+  height: 20px;
+  background:none;
+  width: 300px;
+  outline: none;
+  border-bottom: 1px solid gray;
+}
+.table_link-export {
+  float: right;
+}

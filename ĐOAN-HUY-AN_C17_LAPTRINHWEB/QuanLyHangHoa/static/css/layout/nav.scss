@@ -1,0 +1,130 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background: white;
+  color: gray;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 101;
+  box-shadow: rgba(0,0,0,0.12) 0 1px 4px 1px;
+  padding: 5px;
+
+  i {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  &__left {
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    align-items: center;
+
+    &--icon {
+      i {}
+    }
+
+    &--loo {
+        font-size: 2.2rem;
+        color: greenyellow;
+        margin-left: 1rem;
+    }
+  }
+
+  &__search {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    @include breakpoint(500){
+        display: none;
+    }
+
+    input {
+      background: #f1f1f1;
+      border: none;
+      padding: 12px 50px;
+      width: 100%;
+      outline: none;
+      color: red;
+      border-radius: 20px;
+    }
+
+    i {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      color: gray;
+      cursor: pointer;
+    }
+  }
+
+  &__right {
+    &--item {
+      margin-right: 1rem;
+    }
+
+    &--link {
+      i {}
+    }
+  }
+
+}
+
+
+.dropdown {
+  position: relative;
+}
+.user--menu {
+   list-style: none;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 1%;
+    top: 90%;
+    background:#ffffff;
+    max-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: unset;
+    border-radius: 10px;
+    border: 0.125px solid#ffffff;
+}
+.showuser{
+  display: block;
+}
+.dropdown__menu--item {
+  width: 100%;
+}
+.dropdown__menu--link {
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color:#212529;
+}
+.dropdown__menu--link .item__dropdown {
+  min-width: 82px;
+    height: 50px;
+    position: relative;
+}
+.dropdown__menu--link .item__dropdown i {
+  font-size: 2rem;
+  color: gray;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.dropdown__menu--item span{
+  font-size: 15px;
+    width: 298px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
